@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-blue: rgb(40, 100, 255);
+    --color-ink: rgb(16, 32, 59);
+    --color-lime: rgb(200, 255, 106);
+    --color-line: rgb(221, 229, 240);
+    --color-muted: rgb(96, 112, 139);
+    --color-navy: rgb(7, 26, 56);
+    --color-surface: rgb(255, 255, 255);
+  }
+
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+}
+
+@layer components {
+  .text-display {
+    font-size: 48px;
+    line-height: 1.15;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .text-heading {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .text-body {
+    font-size: 15px;
+    line-height: 1.55;
+    font-weight: 400;
+  }
+
+  .text-label {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+
+  @media (max-width: 1200px) {
+    .text-display {
+      font-size: 42px;
+    }
+    .text-heading {
+      font-size: 26px;
+    }
+  }
+
+  @media (max-width: 810px) {
+    .text-display {
+      font-size: 38px;
+    }
+    .text-heading {
+      font-size: 24px;
+    }
+  }
+
+  .brand-gradient {
+    background: linear-gradient(160deg, rgb(13, 42, 91) 0%, rgb(7, 26, 56) 60%, rgb(4, 18, 40) 100%);
+  }
+}
